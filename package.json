@@ -1,32 +1,21 @@
 {
   "name": "vue-parcel-starter",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "description": "a simple vue.js starter with parcel",
   "scripts": {
     "clean": "rimraf dist",
     "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url . --no-optimize",
     "format": "prettier --write \"src/**/*.{vue,js}\"",
-    "build": "parcel build ./src/index.html --public-url .",
     "test": "jest"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
-  "keywords": [
-    "vue.js",
-    "parcel",
-    "vue",
-    "parcel"
-  ],
-  "author": {
-    "name": "Eric McCormick",
-    "url": "https://edm00se.codes"
-  },
-  "repository": "edm00se/vue-parcel-starter",
-  "homepage": "https://github.com/edm00se/vue-parcel-starter",
   "license": "MIT",
   "dependencies": {
     "vue": "^3.2.20"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.0",
     "@babel/preset-env": "^7.16.0",
     "@parcel/transformer-vue": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.20",
@@ -40,6 +29,7 @@
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "sass": "^1.43.4",
+    "typescript": "^4.5.2",
     "vue-loader": "^16.8.2"
   },
   "husky": {
